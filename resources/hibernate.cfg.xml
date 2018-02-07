@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+ 
+    
+        <property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
+    <property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+    <property name="hibernate.connection.url">jdbc:oracle:thin:@stargate.tse.jus.br:1521:hadmtse</property>
+    <property name="hibernate.connection.username">SJUR3</property>
+    <property name="hibernate.connection.password">SJUR3</property>  
+    <property name="show_sql">true</property>
+    <property name="hibernate.default_schema">admsjur</property> 
+     <mapping class="br.jus.tse.entity.Decisao" />
+     <mapping class="br.jus.tse.entity.ConfiguracaoIntegracao" />
+     <mapping class="br.jus.tse.entity.InteiroTeor" />
+     <mapping class="br.jus.tse.entity.TipoProcesso" />
+     <mapping class="br.jus.tse.entity.GrupoDecisao" /> 
+     
+     
+  <!--            <property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
+    <property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+    <property name="hibernate.connection.url">jdbc:oracle:thin:@bacamarte.tse.jus.br:1521:adm</property>
+    <property name="hibernate.connection.username">ARTHUR_SOUZA</property>
+    <property name="hibernate.connection.password"></property>  
+    <property name="show_sql">true</property>
+    <property name="hibernate.default_schema">admsjur</property> 
+     <mapping class="br.jus.tse.entity.Decisao" />
+     <mapping class="br.jus.tse.entity.ConfiguracaoIntegracao" />
+     <mapping class="br.jus.tse.entity.InteiroTeor" />
+     <mapping class="br.jus.tse.entity.TipoProcesso" />
+     <mapping class="br.jus.tse.entity.GrupoDecisao" /> -->
+
+    </session-factory>
+</hibernate-configuration>
